@@ -4,16 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/color/48/000000/javascript--v1.png"
+    />
     <title>Flip Card</title>
-
   </head>
-  <body>
+  <body onload="typing()">
+    <h1>JS Exercise`s</h1>
+    <div class="progress">
+      <div class="progressBar">10%</div>
+    </div>
+    <h1 id="demo"></h1>
     <div class="flip-card">
       <div class="flip-card-inner">
         <div class="flip-card-front"><img src="avatar.jpg" alt="avatar" /></div>
         <div class="flip-card-back"><h2>Saeed Rayat Moghadam</h2></div>
       </div>
     </div>
+
+    <div class="center">
+      <label class="switch">
+        <input type="checkbox" class="toggler" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <button class="btn">TOP</button>
+
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(".btn").click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 800);
+        return true;
+      });
+    </script>
   </body>
 </html>
